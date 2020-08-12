@@ -9,6 +9,10 @@
 </head>
 <body>
 
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
     <div class="container">
         <!--  Nav -->
         <nav class="main-nav">
@@ -65,7 +69,7 @@
             </div>
             <div>
                 <img src="https://i.ibb.co/G57P0Pb/card4.png">
-                <h3>The New Micorsoft Edge</h3>
+                <h3>The New Microsoft Edge</h3>
                 <p>Expect more. World class performance, with more privacy, more productivity, and more value.
                 </p>
                 <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
@@ -197,8 +201,25 @@
     </section>
     
     <footer class="footer">
-        <div class="footer-inner"></div>
+        <div class="footer-inner">
+           <div><i class="fas fa-globe fa-2x"> English (United States)</i></div>
+           <ul>
+               <li><a href="#">Sitemap</a></li>
+               <li><a href="#">Contact Microsoft</a></li>
+               <li><a href="#">Privacy & Cookies</a></li>
+               <li><a href="#">Terms of Use</a></li>
+               <li><a href="#">Trademarks</a></li>
+               <li><a href="#">Safety & Eco</a></li>
+               <li><a href="#">About our Ads</a></li>
+               <li><a href="#">&copy; Microsoft 2020</a></li>
+           </ul>
+        </div>
     </footer>
-    
+
+    <script>
+            document.querySelector('.menu-btn').addEventListener('click', () =>
+                document.querySelector('.main-menu').classList.toggle('show'));
+    </script>
+
 </body>
 </html>
